@@ -1,9 +1,9 @@
-import os
 from peewee import SqliteDatabase
 from loguru import logger
 
 db = SqliteDatabase('movie_bot.db', pragmas={'journal_mode': 'wal'})
 logger.info("✅ Using SQLite database")
+
 
 def init_database():
     """Инициализация базы данных SQLite"""
@@ -19,5 +19,4 @@ def init_database():
     except Exception as e:
         logger.error(f"❌ Ошибка инициализации БД: {e}")
     finally:
-        # Не закрываем соединение для SQLite
         pass
