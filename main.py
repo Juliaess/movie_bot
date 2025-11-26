@@ -11,6 +11,6 @@ from database.db_connection import init_database
 
 if __name__ == '__main__':
     print("🤖 Бот запущен!\nДля остановки используйте Ctrl + C")
-    # init_database()
+    init_database()
     set_default_commands(bot)
     bot.infinity_polling()
