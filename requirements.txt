@@ -4,4 +4,3 @@ peewee
 requests
 loguru
 psycopg2-binary
-playhouse
